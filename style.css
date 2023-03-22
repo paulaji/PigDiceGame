@@ -24,7 +24,8 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Play', sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -56,14 +57,32 @@ main {
   display: none;
 }
 
-h1 {
+.hit-x-to-cont {
   text-align: center;
   font-size: 200%;
-  font-family: monospace;
+  margin-top: 2rem;
+}
+
+.first-margin {
+  margin-top: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Play', sans-serif;
+  /* font-family: monospace; */
+  margin-bottom: 2rem;
 }
 
 p {
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: 'Play', sans-serif;
+}
+
+.caution {
+  /* text-align: center; */
+  font-size: 170%;
 }
 
 .modal {

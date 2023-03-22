@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pig Game</title>
+    <title>🐖</title>
   </head>
   <body>
     <main>
@@ -28,13 +28,19 @@
 
       <div class="modal hidden">
         <button class="close-modal">&times;</button>
-        <h1>🐖 PIG GAME 🐖</h1>
+        <h1>🐗 PIG GAME 🐗</h1>
         <h2>INSTRUCTIONS:</h2>
         <p class="instr">
-          🐽 P1 rolls the dice 🐽 Each die(dice) roll gets added as points 🐽 If
-          P1 rolls a number 1, P1 loses their turn and loses all points
-          accumulated 🐽 P2 rolls the dice 🐷 CAUTION!!! Store the points before
-          you roll the number 1 🐷 Hit X to continue
+          <div class="caution first-margin">🐽 P1 rolls the dice</div>
+          <div class = "caution">🐽 Each die(dice) roll gets added as points</div>
+          <div class="caution">🐽 If
+            P1 rolls a number 1, P1 loses their turn and loses all points accumulated</div>
+          <div class="caution">🐽 P2 rolls the dice </div>
+          <div class="caution  first-margin">🐷 CAUTION!!! Store the points before
+            you roll the number 1</div>
+          <div class="caution">🐷 Player to reach 100 WINS!!</div>
+          <div class="hit-x-to-cont">🐗 Hit X to
+            Start 🐗</div>
         </p>
       </div>
       <div class="overlay hidden"></div>
@@ -42,7 +48,7 @@
       <img src="dice-5.png" alt="Playing dice" class="dice" />
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
-      <button class="btn btn--hold">📥 Hold</button>
+      <button class="btn btn--hold">📥 Store points</button>
     </main>
     <script src="script.js"></script>
   </body>
