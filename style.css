@@ -63,6 +63,10 @@ main {
   margin-top: 2rem;
 }
 
+.piggie {
+  font-size: 750%;
+}
+
 .first-margin {
   margin-top: 2rem;
 }
@@ -100,7 +104,7 @@ p {
 }
 
 .close-modal {
-  position: absolute;
+  /* position: absolute; */
   top: 1.2rem;
   right: 2rem;
   font-size: 5rem;
@@ -108,6 +112,8 @@ p {
   cursor: pointer;
   border: none;
   background: none;
+  margin-left: 250px;
+  margin-bottom: 25px;
 }
 
 .overlay {
