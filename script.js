@@ -29,6 +29,15 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('btn--hold');
+const current0El = document.getElementById('current--0');
+const current1El = document.getElementById('current--1');
+const player0El = document.querySelector('.player--0');
+const player1El = document.querySelector('.player--1');
+
+// we are storing scores in an array
+const scores = [0, 0];
+let currentScore = 0;
+let activePlayer = 0;
 
 // firstly dice ine hide cheyyanam and setting scores to 0
 diceEl.classList.add('hidden');
@@ -45,5 +54,19 @@ btnRoll.addEventListener('click', function () {
   // display the corresponding dice image
   diceEl.classList.remove('hidden');
   diceEl.src = `dice-${dice}.png`;
+
   // check if 1 or not, true, change to other player
+  if (dice != 1) {
+    currentScore = currentScore + dice;
+    document.getElementById(`current--${activePlayer}`).textContent =
+      currentScore;
+    // ipo entha cheythe enn vecha, activePlayer was globally declared as 0 indicating to player 1
+    // when we roll the number 1, we just set activePlayer as 1 which means player 2
+  } else {
+    document.getElementById(`current--${activePlayer}`).textContent = 0; // 1 roll cheytha current score 0 aakum
+    activePlayer = activePlayer == 0 ? 1 : 0;
+    currentScore = 0;
+    player1El.classList.toggle('player--active');
+    player0El.classList.toggle('player--active');
+  }
 });
