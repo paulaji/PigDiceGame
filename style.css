@@ -6,6 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Extended+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 * {
   margin: 0;
@@ -103,6 +105,69 @@ p {
   z-index: 10;
 }
 
+.score-20 {
+  /* position: absolute; */
+  /* top: 1.2rem;
+  right: 2rem; */
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  /* border: none; */
+  border: 3px outset #00000095;
+  background: #a52a2a3e;
+  font-family: 'Source Code Pro', monospace;
+  /* font-family: 'Play', sans-serif; */
+  /* margin-left: 250px;
+  /* margin-bottom: 25px; */
+  /* bottom: 5rem; */
+  /* left: 10rem; */
+}
+
+.score-50 {
+  /* margin-left: 10rem; */
+  /* position: absolute; */
+  /* top: 1.2rem;
+  right: 2rem; */
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  /* border: none; */
+  border: 3px outset #00000095;
+  background: #a52a2a6e;
+  /* margin-left: 250px;
+  margin-bottom: 25px; */
+  /* bottom: 3rem; */
+  /* left: 30rem; */
+  margin-left: 10px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.score-100 {
+  /* margin-left: 20rem; */
+  /* position: absolute; */
+  /* top: 1.2rem;
+  right: 2rem; */
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  /* border: none; */
+  background: #a52a2aa3;
+  border: 3px outset #00000095;
+  margin-left: 10px;
+  /* margin-left: 250px;
+  margin-bottom: 25px; */
+  /* bottom: 1rem;
+  /* left: 50rem; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* font-family: 'Libre Barcode 39 Extended Text', cursive; */
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-family: 'Inter', sans-serif;
+  font-family: 'Press Start 2P', cursive; */
+  font-family: 'Source Code Pro', monospace;
+}
+
 .close-modal {
   position: absolute;
   top: 1.2rem;
@@ -160,11 +225,17 @@ p {
   font-family: 'Libre Barcode 39 Extended Text', cursive;
 }
 
+.caution1 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
 .player--active {
-  /* background-color: rgba(255, 255, 255, 0.4); */
+  background-color: rgba(255, 255, 255, 0.4);
   /* background-color: rgba(251, 224, 224, 0.823); */
   /* background-color: rgba(44, 255, 40, 0.705); */
-  background-color: #e0ce2dde;
+  /* background-color: #eec01ade; */
 }
 .player--active .name {
   font-weight: 700;
@@ -194,6 +265,7 @@ p {
   margin-bottom: 1rem;
   font-size: 1.7rem;
   color: #ddd;
+  font-family: 'Source Code Pro', monospace;
   /* font-family: 'Libre Barcode 39 Extended Text', cursive; */
 }
 
@@ -233,13 +305,24 @@ p {
 }
 
 .btn--new {
+  /* background: #7b4000a0; */
+  /* background: #7b4000c3; */
   top: 4rem;
+  font-family: 'Source Code Pro', monospace;
+  /* color: #f0e6e6; */
 }
 .btn--roll {
+  /* background: #7b4000c3; */
   top: 39.3rem;
+  font-family: 'Source Code Pro', monospace;
+  /* color: #f0e6e6; */
 }
 .btn--hold {
+  /* color: #f0e6e6; */
+  /* background: #7b4000c3; */
   top: 46.1rem;
+  font-family: 'Source Code Pro', monospace;
+  /* background: #7b4000a0; */
 }
 
 .btn:active {
@@ -262,7 +345,7 @@ p {
 
 .player--winner {
   /* background-color: #e0ce2d; */
-  background-color: rgba(44, 255, 40, 0.808);
+  background-color: rgba(0, 208, 25, 0.808);
 }
 
 .player--winner .name {
