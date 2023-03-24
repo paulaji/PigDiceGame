@@ -304,6 +304,20 @@ p {
   margin-right: 0.7rem;
 }
 
+.oops {
+  top: 28rem;
+  /* font-family: 'Source Code Pro', monospace; */
+  /* font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Bungee Shade', cursive; */
+  /* font-family: 'Geostar Fill', cursive; */
+  /* font-family: 'Libre Barcode 39 Extended Text', cursive; */
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Press Start 2P', cursive;
+  background: red;
+  color: wheat;
+  font-size: 1rem;
+}
+
 .btn--new {
   /* background: #7b4000a0; */
   /* background: #7b4000c3; */

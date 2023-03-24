@@ -8,6 +8,7 @@ const overlay = document.querySelector('.overlay');
 const btnmode20 = document.querySelector('.score-20');
 const btnmode50 = document.querySelector('.score-50');
 const btnmode100 = document.querySelector('.score-100');
+const oops = document.querySelector('.oops');
 
 modal.classList.remove('hidden');
 overlay.classList.remove('hidden');
@@ -75,6 +76,7 @@ const piggie = function () {
 
       // check if 1 or not, true, change to other player
       if (dice != 1) {
+        oops.classList.add('hidden');
         currentScore = currentScore + dice;
         document.getElementById(`current--${activePlayer}`).textContent =
           currentScore;
@@ -88,7 +90,12 @@ const piggie = function () {
       //   player1El.classList.toggle('player--active');
       //   player0El.classList.toggle('player--active');
       // }
-      else switchPlayer();
+      else {
+        oops.classList.remove('hidden');
+        oops.textContent = `⚠ Player ${activePlayer + 1} rolled a 1`;
+        // setTimeout();
+        switchPlayer();
+      }
     }
   });
 
@@ -145,6 +152,8 @@ const piggie = function () {
     scores = [0, 0];
     activePlayer = 0;
     playing = true;
+    // modal.classList.remove('hidden');
+    // overlay.classList.remove('hidden');
   });
 };
 
@@ -205,6 +214,7 @@ const mode20 = function () {
 
       // check if 1 or not, true, change to other player
       if (dice != 1) {
+        oops.classList.add('hidden');
         currentScore = currentScore + dice;
         document.getElementById(`current--${activePlayer}`).textContent =
           currentScore;
@@ -218,7 +228,11 @@ const mode20 = function () {
       //   player1El.classList.toggle('player--active');
       //   player0El.classList.toggle('player--active');
       // }
-      else switchPlayer();
+      else {
+        oops.classList.remove('hidden');
+        oops.textContent = `⚠ Player ${activePlayer + 1} rolled a 1`;
+        switchPlayer();
+      }
     }
   });
 
@@ -275,6 +289,9 @@ const mode20 = function () {
     scores = [0, 0];
     activePlayer = 0;
     playing = true;
+    oops.classList.add('hidden');
+    // modal.classList.remove('hidden');
+    // overlay.classList.remove('hidden');
   });
 };
 
@@ -335,6 +352,7 @@ const mode50 = function () {
 
       // check if 1 or not, true, change to other player
       if (dice != 1) {
+        oops.classList.add('hidden');
         currentScore = currentScore + dice;
         document.getElementById(`current--${activePlayer}`).textContent =
           currentScore;
@@ -348,7 +366,11 @@ const mode50 = function () {
       //   player1El.classList.toggle('player--active');
       //   player0El.classList.toggle('player--active');
       // }
-      else switchPlayer();
+      else {
+        oops.classList.remove('hidden');
+        oops.textContent = `⚠ Player ${activePlayer + 1} rolled a 1`;
+        switchPlayer();
+      }
     }
   });
 
@@ -405,6 +427,9 @@ const mode50 = function () {
     scores = [0, 0];
     activePlayer = 0;
     playing = true;
+    oops.classList.add('hidden');
+    // modal.classList.remove('hidden');
+    // overlay.classList.remove('hidden');
   });
 };
 
@@ -465,6 +490,7 @@ const mode100 = function () {
 
       // check if 1 or not, true, change to other player
       if (dice != 1) {
+        oops.classList.add('hidden');
         currentScore = currentScore + dice;
         document.getElementById(`current--${activePlayer}`).textContent =
           currentScore;
@@ -478,7 +504,11 @@ const mode100 = function () {
       //   player1El.classList.toggle('player--active');
       //   player0El.classList.toggle('player--active');
       // }
-      else switchPlayer();
+      else {
+        oops.classList.remove('hidden');
+        oops.textContent = `⚠ Player ${activePlayer + 1} rolled a 1`;
+        switchPlayer();
+      }
     }
   });
 
@@ -535,6 +565,9 @@ const mode100 = function () {
     scores = [0, 0];
     activePlayer = 0;
     playing = true;
+    oops.classList.add('hidden');
+    // modal.classList.remove('hidden');
+    // overlay.classList.remove('hidden');
   });
 };
 
