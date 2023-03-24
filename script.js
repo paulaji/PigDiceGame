@@ -13,6 +13,13 @@ const oops = document.querySelector('.oops');
 modal.classList.remove('hidden');
 overlay.classList.remove('hidden');
 
+// refresh option
+const btnHome = document.querySelector('.btn--home');
+btnHome.onclick = () => {
+  window.location.reload();
+};
+// btnHome.addEventListener('click', window.location.reload());
+
 // document.addEventListener('keydown', function (event) {
 //   if (event.key == 'Enter' && !modal.classList.contains('hidden')) {
 //     modal.classList.add('hidden');
@@ -152,6 +159,8 @@ const piggie = function () {
     scores = [0, 0];
     activePlayer = 0;
     playing = true;
+    // modal.classList.remove('hidden');
+    // overlay.classList.remove('hidden');
     // modal.classList.remove('hidden');
     // overlay.classList.remove('hidden');
   });

@@ -339,6 +339,15 @@ p {
   /* background: #7b4000a0; */
 }
 
+.btn--home {
+  /* color: #050000; */
+  /* background: #ff0000c3; */
+  top: 53rem;
+  font-family: 'Source Code Pro', monospace;
+  /* background: #7b4000a0; */
+  /* backdrop-filter: blur(50px); */
+}
+
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
