@@ -163,7 +163,8 @@ p {
 .player--active {
   /* background-color: rgba(255, 255, 255, 0.4); */
   /* background-color: rgba(251, 224, 224, 0.823); */
-  background-color: rgba(44, 255, 40, 0.705);
+  /* background-color: rgba(44, 255, 40, 0.705); */
+  background-color: #e0ce2dde;
 }
 .player--active .name {
   font-weight: 700;
@@ -260,7 +261,8 @@ p {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  /* background-color: #e0ce2d; */
+  background-color: rgba(44, 255, 40, 0.808);
 }
 
 .player--winner .name {
